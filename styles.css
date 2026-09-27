@@ -1,0 +1,22 @@
+:root { --proof-accent: #264f72; }
+body { color: #252b31; }
+h1, h2, h3 { font-weight: 600; line-height: 1.45; }
+h1.title { font-size: 1.9rem; }
+h2 { font-size: 1.45rem; margin-top: 2.1rem; }
+h3 { font-size: 1.2rem; }
+a { color: var(--proof-accent); text-underline-offset: .18em; }
+main p, main li { overflow-wrap: anywhere; }
+main li { margin-bottom: .55rem; }
+section[id] { scroll-margin-top: 1.5rem; }
+section:target > h2, section:target > h3 {
+  background: #edf4fa;
+  border-left: 3px solid var(--proof-accent);
+  padding-left: .5rem;
+}
+.sidebar-title { font-size: 1.3rem; }
+.table { font-size: .96rem; }
+@media (max-width: 767px) {
+  h1.title { font-size: 1.6rem; }
+  body { font-size: 17px; }
+}
+

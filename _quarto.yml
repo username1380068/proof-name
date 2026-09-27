@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - guide.qmd
+    - theorems/*.qmd
+
+lang: zh
+
+website:
+  title: "证明札记"
+  search: true
+  sidebar:
+    style: docked
+    contents:
+      - href: index.qmd
+        text: 定理与引理
+      - section: 笔记
+        contents:
+          - auto: theorems
+      - href: guide.qmd
+        text: 阅读与写作
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: 本页目录
+    toc-depth: 3
+    number-sections: false
+    html-math-method: mathjax
+    anchor-sections: true
+    link-external-newwindow: true
+    fontsize: 18px
+    linestretch: 1.8
+

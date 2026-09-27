@@ -1,0 +1,22 @@
+---
+title: "定理与引理"
+toc: false
+listing:
+  contents: theorems
+  type: table
+  fields: [title, description]
+  field-display-names:
+    title: 条目
+    description: 证明的关键
+  sort: title
+  filter-ui: true
+  sort-ui: false
+---
+
+这里收集一些定理、引理及其证明。每篇先给出完整陈述和证明路线；点击路线中的步骤，可以查看该步的详细论证。
+
+第一次来，可以从 **[A0001：有限整环是域](theorems/finite-domain.qmd)** 开始。
+它展示了“总路线 → 每步详证 → 所用引理”的阅读方式。
+
+条目前的编号是本笔记集自己的标识。两篇基础代数示例用于演示阅读结构，之后可逐渐加入自己的研究笔记。
+

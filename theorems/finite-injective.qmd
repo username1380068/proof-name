@@ -1,0 +1,44 @@
+---
+title: "A0002 · 有限集合上的单射自映射必为满射"
+description: "单射保留元素个数，而有限集合的真子集元素更少。"
+categories: [集合论, 基础示例]
+---
+
+## 引理陈述 {#statement}
+
+**引理 A0002.** 设 $S$ 是有限集合，$f:S\to S$ 是单射，则 $f$ 是满射。
+
+## 证明路线 {#proof-roadmap}
+
+1. **[计算像的大小](#step-count)。** 单射说明不同元素有不同的像，因此 $|f(S)|=|S|$。
+2. **[由大小推出集合相等](#step-equal)。** 因为 $f(S)\subseteq S$，且 $S$ 有限，所以 $f(S)=S$。
+
+## 详细证明 {#proof-details}
+
+### 第一步：像与原集合大小相同 {#step-count}
+
+设 $|S|=n$。如果 $n=0$，则 $S$ 与 $f(S)$ 都为空，结论成立。
+如果 $n>0$，可列出 $S=\{s_1,\ldots,s_n\}$。
+由单射性，$f(s_1),\ldots,f(s_n)$ 两两不同，而这些恰好构成 $f(S)$。
+因此 $|f(S)|=n=|S|$。
+
+[↑ 返回证明路线](#proof-roadmap) · [下一步](#step-equal)
+
+### 第二步：像就是整个集合 {#step-equal}
+
+已知 $f(S)\subseteq S$。假如存在 $s\in S\setminus f(S)$，
+那么 $f(S)\subseteq S\setminus\{s\}$，从而
+
+$$
+|f(S)|\leq |S|-1<|S|,
+$$
+
+这与第一步矛盾。因此 $f(S)=S$，即 $f$ 满射。$\square$
+
+[↑ 返回证明路线](#proof-roadmap)
+
+## 应用 {#applications}
+
+该引理用于[定理 A0001 的第二步](finite-domain.qmd#step-surjective)。
+这个应用链接是手工维护的；以后其他证明也可以引用本页，无需重复书写引理。
+
