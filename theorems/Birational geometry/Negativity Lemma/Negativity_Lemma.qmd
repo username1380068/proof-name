@@ -1,0 +1,48 @@
+---
+title: "A0001 · Negativity Lemma"
+description: "111"
+categories: [Birational geometry]
+---
+
+# Negativity Lemma {#statement}
+
+**Theorem A0001.** Let $f:X\to Y$ be a proper birational morphism between normal varieties. Let $D$ be a $\mathbb R$-Cartier divisor on $X$ such that $-D$ is nef over $Y$. Then:
+
+(1) $D$ is effective if and only if $f_*D$ is effective.
+
+(2) Assume that $D$ is effective. Then for every $y\in Y$, either $f^{-1}(y)\cap \operatorname{Supp}(D)=\emptyset$ or $f^{-1}(y)\subset \operatorname{Supp}(D)$.
+
+<p id="proof1"><strong>Proof of (1)</strong></p>
+
+It suffices to prove the "only if" part.
+
+[Step 1. ](#step-assume)We may assume that $f$ is projective and $X,Y$ are quasi-projective.
+
+[Step 2. ](#step-antiample)Then there exists an effective divisor $E$ which is $f$-antiample and $E$ contains each exceptional divisor.
+
+[Step 3. ](#step-curve) Note that the negative part of $D$ is exceptional. Let $e$ be the minimal non-negative number such that $D+eE$ is effective then there exists a curve $C$ contracted by $f$ such that $(D+eE)\cdot C\ge 0$. But note that $-D$ is $f$-nef and $-E$ is $f$-ample and hence we get a contradiction.
+
+<p id="proof2"><strong>Proof of (2)</strong></p>
+
+If there exists a fiber $f^{-1}(y)$ such that $f^{-1}(y)\cap \operatorname{Supp}(D)\not=\emptyset$ and $f^{-1}(y)\not\subset \operatorname{Supp}(D)$, then we can find a curve $C$ in the fiber that intersects the support of $D$ but is not contained in it. Then we have $$D\cdot C>0$$ Contradiction.
+
+## Details of proof of (1)
+
+#### Step 1. {#step-assume}
+
+By [Chow's lemma](Chow's_Lemma.qmd#statement), we obtain a projective birational morphisms $\pi:X'\to X$ and $f':X'\to Y$. Let $B$ be an effective divisor on $X'$, then $\pi_*B$ is again effective. So we may assume that $f$ is projective. Let $U\subset Y$ be an affine open subset which meets each component of $f_*D$. Replacing $Y$ by $U$ we may assume that $Y$ is affine. Then $X,Y$ are quasi-projective.
+
+[↑ Back to the proof of (1)](#proof1) $\quad$ [↓ Next step](#step-antiample)
+
+#### Step 2. {#step-antiample}
+
+Let $H$ be an ample divisor on $Y$ which contains each center of exceptional divisors. Then we have $$f^*H=\widetilde{H}+E$$ Where $\widetilde{H}$ is the birational transform of $H$ and $E$ contains each exceptional divisor. We see that $E\sim_{f} -\widetilde{H}$ and hence $-E$ is $f$-ample.
+
+[↑ Back to the proof of (1)](#proof1) $\quad$ [↓ Next step](#step-curve)
+
+#### Step 3. {#step-curve}
+
+Let $D=D^+-D^-$ where $D^+,D^-$ are effective. We see that $D^-$ is exceptional since $f_*D$ is effective. Let $e$ be the minimal non-negative number such that $D+eE$ is effective. Then there exists an prime divisor $F$ whose coefficient is positive in $D$ but is zero in $D+eE$. Then there exists a curve $C\subset F$ which is contracted by $f$ and not contained in the support of $D+eE$. Hecne we have $(D+eE)\cdot C\ge 0$. But $-D$ is $f$-nef and $-E$ is $f$-ample, we obtain that $$(D+eE)\cdot C<0$$ a contradiction.
+[↑ Back to the proof of (1)](#proof1) 
+
+

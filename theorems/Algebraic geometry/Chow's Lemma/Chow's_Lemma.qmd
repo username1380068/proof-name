@@ -1,0 +1,11 @@
+---
+title: "A0002 · Chow's Lemma"
+description: "111"
+categories: [Algebraic geometry]
+---
+
+# Chow's Lemma {#statement}
+
+**Theorem** Let $X$ be a scheme proper over a noetherian base scheme $S$. Then there exists a projective $S$-scheme $X'$, a surjective $S$-morphism $f:X'\to X$, and a dense open subset $U\subseteq X$ such that the restriction $f^{-1}(U)\to U$ is an isomorphism.
+
+<p id="proof"><strong>Proof</strong></p>
